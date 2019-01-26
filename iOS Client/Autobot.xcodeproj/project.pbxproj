@@ -1,0 +1,978 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57955861F0105B564E4D62FC /* libPods-Autobot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A73DDEDE37F7ADED70B73A /* libPods-Autobot.a */; };
+		F13691982069218B0036487C /* outputmemorystream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F13691902069218A0036487C /* outputmemorystream.cpp */; };
+		F13691992069218B0036487C /* inputmemorystream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F13691922069218A0036487C /* inputmemorystream.cpp */; };
+		F136919A2069218B0036487C /* socketaddress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F13691962069218B0036487C /* socketaddress.cpp */; };
+		F136919B2069218B0036487C /* tcpsocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F13691972069218B0036487C /* tcpsocket.cpp */; };
+		F140BA1A2067E6370053058D /* VideoPreviewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F140BA192067E60B0053058D /* VideoPreviewer.framework */; };
+		F140BA1B2067E6370053058D /* VideoPreviewer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F140BA192067E60B0053058D /* VideoPreviewer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1A52D62205FEBCC006EC602 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D61205FEBCC006EC602 /* AppDelegate.m */; };
+		F1A52D65205FEBCC006EC602 /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D64205FEBCC006EC602 /* HomeScreenViewController.m */; };
+		F1A52D68205FEBCC006EC602 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A52D66205FEBCC006EC602 /* Main.storyboard */; };
+		F1A52D6A205FEBCC006EC602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A52D69205FEBCC006EC602 /* Assets.xcassets */; };
+		F1A52D6D205FEBCC006EC602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A52D6B205FEBCC006EC602 /* LaunchScreen.storyboard */; };
+		F1A52D70205FEBCC006EC602 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D6F205FEBCC006EC602 /* main.m */; };
+		F1A52D7A205FEBCC006EC602 /* AutobotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D79205FEBCC006EC602 /* AutobotTests.m */; };
+		F1A52D85205FEBCC006EC602 /* AutobotUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D84205FEBCC006EC602 /* AutobotUITests.m */; };
+		F1A52D9420600A9C006EC602 /* MissionSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D9320600A9C006EC602 /* MissionSelectionViewController.m */; };
+		F1A52D9720600ABE006EC602 /* AreaSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D9620600ABE006EC602 /* AreaSearchViewController.m */; };
+		F1A52D9A20600AF5006EC602 /* AreaMarkerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D9920600AF5006EC602 /* AreaMarkerViewController.m */; };
+		F1A52D9D20600B58006EC602 /* ConfigureDroneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D9C20600B58006EC602 /* ConfigureDroneViewController.m */; };
+		F1A52DA42060473A006EC602 /* DroneManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1A52DA32060473A006EC602 /* DroneManager.mm */; };
+		F1A52DA720604745006EC602 /* NetworkManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1A52DA620604745006EC602 /* NetworkManager.mm */; };
+		F1A52DAA206047C1006EC602 /* DroneVideoStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A52DA9206047C1006EC602 /* DroneVideoStreamViewController.m */; };
+		F1A52DAD20604D2E006EC602 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A52DAC20604D2E006EC602 /* MapViewController.m */; };
+		F1A52DB0206052E4006EC602 /* TouchForwardingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A52DAF206052E4006EC602 /* TouchForwardingView.m */; };
+		F1B2136E20BAF5EE0006F58F /* GeospatialAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B2136D20BAF5EE0006F58F /* GeospatialAnalytics.m */; };
+		F1B88DE020C9689300B4B913 /* ManualFlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B88DDF20C9689300B4B913 /* ManualFlightViewController.m */; };
+		F1B88DE320C96ACE00B4B913 /* PointMissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B88DE220C96ACE00B4B913 /* PointMissionViewController.m */; };
+		F1BAD7B520CC400E000AEE8D /* DroneImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BAD7B420CC400E000AEE8D /* DroneImage.m */; };
+		F1BAD7B820CC40AE000AEE8D /* DroneImageOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BAD7B720CC40AE000AEE8D /* DroneImageOverlay.m */; };
+		F1BD3C3A2084C0820084CA65 /* DJIAircraftAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BD3C392084C0820084CA65 /* DJIAircraftAnnotationView.m */; };
+		F1BD3C3D2084C1490084CA65 /* DJIAircraftAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BD3C3C2084C1490084CA65 /* DJIAircraftAnnotation.m */; };
+		F1C67C5D21FB561A008F1ADF /* DroneImageOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C67C5C21FB561A008F1ADF /* DroneImageOverlayView.m */; };
+		F1C67C5F21FB5A54008F1ADF /* socketaddress.hpp in Sources */ = {isa = PBXBuildFile; fileRef = F13691932069218A0036487C /* socketaddress.hpp */; };
+		F1C67C6021FB5A9A008F1ADF /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D60205FEBCC006EC602 /* AppDelegate.h */; };
+		F1C67C6121FB5A9A008F1ADF /* ByteSwap.hpp in Sources */ = {isa = PBXBuildFile; fileRef = F13691912069218A0036487C /* ByteSwap.hpp */; };
+		F1C67C6221FB5A9A008F1ADF /* inputmemorystream.hpp in Sources */ = {isa = PBXBuildFile; fileRef = F13691952069218B0036487C /* inputmemorystream.hpp */; };
+		F1C67C6321FB5A9A008F1ADF /* outputmemorystream.hpp in Sources */ = {isa = PBXBuildFile; fileRef = F13691942069218A0036487C /* outputmemorystream.hpp */; };
+		F1C67C6421FB5A9A008F1ADF /* tcpsocket.hpp in Sources */ = {isa = PBXBuildFile; fileRef = F136918F206921890036487C /* tcpsocket.hpp */; };
+		F1C67C6521FB5A9A008F1ADF /* InspectionAreaManager.h in Sources */ = {isa = PBXBuildFile; fileRef = F1F60AB12061476D00489F26 /* InspectionAreaManager.h */; };
+		F1C67C6621FB5A9A008F1ADF /* DroneManager.h in Sources */ = {isa = PBXBuildFile; fileRef = F1A52DA22060473A006EC602 /* DroneManager.h */; };
+		F1C67C6721FB5A9A008F1ADF /* NetworkManager.h in Sources */ = {isa = PBXBuildFile; fileRef = F1A52DA520604745006EC602 /* NetworkManager.h */; };
+		F1C67C6821FB5A9A008F1ADF /* GeospatialAnalytics.h in Sources */ = {isa = PBXBuildFile; fileRef = F1B2136C20BAF5EE0006F58F /* GeospatialAnalytics.h */; };
+		F1C67C6921FB5A9A008F1ADF /* DroneImageOverlayView.h in Sources */ = {isa = PBXBuildFile; fileRef = F1C67C5B21FB561A008F1ADF /* DroneImageOverlayView.h */; };
+		F1C67C6A21FB5A9A008F1ADF /* DroneImageOverlay.h in Sources */ = {isa = PBXBuildFile; fileRef = F1BAD7B620CC40AE000AEE8D /* DroneImageOverlay.h */; };
+		F1C67C6B21FB5A9A008F1ADF /* DroneImage.h in Sources */ = {isa = PBXBuildFile; fileRef = F1BAD7B320CC400E000AEE8D /* DroneImage.h */; };
+		F1C67C6C21FB5A9A008F1ADF /* LaunchScreen.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D6B205FEBCC006EC602 /* LaunchScreen.storyboard */; };
+		F1C67C6D21FB5A9A008F1ADF /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D66205FEBCC006EC602 /* Main.storyboard */; };
+		F1C67C6E21FB5A9A008F1ADF /* DJIAircraftAnnotationView.h in Sources */ = {isa = PBXBuildFile; fileRef = F1BD3C382084C0820084CA65 /* DJIAircraftAnnotationView.h */; };
+		F1C67C6F21FB5A9A008F1ADF /* DJIAircraftAnnotation.h in Sources */ = {isa = PBXBuildFile; fileRef = F1BD3C3B2084C1490084CA65 /* DJIAircraftAnnotation.h */; };
+		F1C67C7021FB5A9A008F1ADF /* TouchForwardingView.h in Sources */ = {isa = PBXBuildFile; fileRef = F1A52DAE206052E4006EC602 /* TouchForwardingView.h */; };
+		F1C67C7121FB5A9A008F1ADF /* ManualFlightViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = F1B88DDE20C9689300B4B913 /* ManualFlightViewController.h */; };
+		F1C67C7221FB5A9A008F1ADF /* MapViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = F1A52DAB20604D2E006EC602 /* MapViewController.h */; };
+		F1C67C7321FB5A9A008F1ADF /* PointMissionViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = F1B88DE120C96ACE00B4B913 /* PointMissionViewController.h */; };
+		F1C67C7421FB5A9A008F1ADF /* DroneVideoStreamViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = F1A52DA8206047C1006EC602 /* DroneVideoStreamViewController.h */; };
+		F1C67C7521FB5A9A008F1ADF /* HomeScreenViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D63205FEBCC006EC602 /* HomeScreenViewController.h */; };
+		F1C67C7621FB5A9A008F1ADF /* ConfigureDroneViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D9B20600B58006EC602 /* ConfigureDroneViewController.h */; };
+		F1C67C7721FB5A9A008F1ADF /* AreaMarkerViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D9820600AF5006EC602 /* AreaMarkerViewController.h */; };
+		F1C67C7821FB5A9A008F1ADF /* AreaSearchViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D9520600ABE006EC602 /* AreaSearchViewController.h */; };
+		F1C67C7921FB5A9A008F1ADF /* MissionSelectionViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = F1A52D9220600A9C006EC602 /* MissionSelectionViewController.h */; };
+		F1F60AB32061476D00489F26 /* InspectionAreaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F60AB22061476D00489F26 /* InspectionAreaManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F140BA182067E60B0053058D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F140BA142067E60B0053058D /* VideoPreviewer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 02A543FD1C3C51CB0083C11B;
+			remoteInfo = VideoPreviewer;
+		};
+		F140BA1C2067E6370053058D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F140BA142067E60B0053058D /* VideoPreviewer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 02A543FC1C3C51CB0083C11B;
+			remoteInfo = VideoPreviewer;
+		};
+		F1A52D76205FEBCC006EC602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A52D55205FEBCC006EC602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A52D5C205FEBCC006EC602;
+			remoteInfo = Autobot;
+		};
+		F1A52D81205FEBCC006EC602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A52D55205FEBCC006EC602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A52D5C205FEBCC006EC602;
+			remoteInfo = Autobot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F140BA1E2067E6370053058D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F140BA1B2067E6370053058D /* VideoPreviewer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		27A73DDEDE37F7ADED70B73A /* libPods-Autobot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Autobot.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2978A69099C4B9BD8264E0EF /* Pods-Autobot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autobot.release.xcconfig"; path = "Pods/Target Support Files/Pods-Autobot/Pods-Autobot.release.xcconfig"; sourceTree = "<group>"; };
+		9985048999FE0CF548BA05A2 /* Pods-Autobot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autobot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Autobot/Pods-Autobot.debug.xcconfig"; sourceTree = "<group>"; };
+		F136918F206921890036487C /* tcpsocket.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tcpsocket.hpp; sourceTree = "<group>"; };
+		F13691902069218A0036487C /* outputmemorystream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = outputmemorystream.cpp; sourceTree = "<group>"; };
+		F13691912069218A0036487C /* ByteSwap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ByteSwap.hpp; sourceTree = "<group>"; };
+		F13691922069218A0036487C /* inputmemorystream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = inputmemorystream.cpp; sourceTree = "<group>"; };
+		F13691932069218A0036487C /* socketaddress.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = socketaddress.hpp; sourceTree = "<group>"; };
+		F13691942069218A0036487C /* outputmemorystream.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = outputmemorystream.hpp; sourceTree = "<group>"; };
+		F13691952069218B0036487C /* inputmemorystream.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = inputmemorystream.hpp; sourceTree = "<group>"; };
+		F13691962069218B0036487C /* socketaddress.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = socketaddress.cpp; sourceTree = "<group>"; };
+		F13691972069218B0036487C /* tcpsocket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tcpsocket.cpp; sourceTree = "<group>"; };
+		F140BA142067E60B0053058D /* VideoPreviewer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VideoPreviewer.xcodeproj; path = VideoPreviewer/VideoPreviewer.xcodeproj; sourceTree = "<group>"; };
+		F15BE8FE20848F9700821DE3 /* libOpenCV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libOpenCV.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15BE9002084903900821DE3 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		F15BE9022084904900821DE3 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		F15BE9042084905000821DE3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F15BE9062084905500821DE3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F15BE9082084905B00821DE3 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		F15BE90A2084906200821DE3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F15BE90C2084906A00821DE3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F15BE90E2084907100821DE3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F15BE9102084907800821DE3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F15BE9122084908000821DE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F1A52D5D205FEBCC006EC602 /* Autobot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autobot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A52D60205FEBCC006EC602 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F1A52D61205FEBCC006EC602 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F1A52D63205FEBCC006EC602 /* HomeScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeScreenViewController.h; sourceTree = "<group>"; };
+		F1A52D64205FEBCC006EC602 /* HomeScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeScreenViewController.m; sourceTree = "<group>"; };
+		F1A52D67205FEBCC006EC602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1A52D69205FEBCC006EC602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1A52D6C205FEBCC006EC602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1A52D6E205FEBCC006EC602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A52D6F205FEBCC006EC602 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1A52D75205FEBCC006EC602 /* AutobotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutobotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A52D79205FEBCC006EC602 /* AutobotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutobotTests.m; sourceTree = "<group>"; };
+		F1A52D7B205FEBCC006EC602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A52D80205FEBCC006EC602 /* AutobotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutobotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A52D84205FEBCC006EC602 /* AutobotUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutobotUITests.m; sourceTree = "<group>"; };
+		F1A52D86205FEBCC006EC602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A52D9220600A9C006EC602 /* MissionSelectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MissionSelectionViewController.h; sourceTree = "<group>"; };
+		F1A52D9320600A9C006EC602 /* MissionSelectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MissionSelectionViewController.m; sourceTree = "<group>"; };
+		F1A52D9520600ABE006EC602 /* AreaSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AreaSearchViewController.h; sourceTree = "<group>"; };
+		F1A52D9620600ABE006EC602 /* AreaSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AreaSearchViewController.m; sourceTree = "<group>"; };
+		F1A52D9820600AF5006EC602 /* AreaMarkerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AreaMarkerViewController.h; sourceTree = "<group>"; };
+		F1A52D9920600AF5006EC602 /* AreaMarkerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AreaMarkerViewController.m; sourceTree = "<group>"; };
+		F1A52D9B20600B58006EC602 /* ConfigureDroneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigureDroneViewController.h; sourceTree = "<group>"; };
+		F1A52D9C20600B58006EC602 /* ConfigureDroneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigureDroneViewController.m; sourceTree = "<group>"; };
+		F1A52DA22060473A006EC602 /* DroneManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DroneManager.h; sourceTree = "<group>"; };
+		F1A52DA32060473A006EC602 /* DroneManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DroneManager.mm; sourceTree = "<group>"; };
+		F1A52DA520604745006EC602 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		F1A52DA620604745006EC602 /* NetworkManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NetworkManager.mm; sourceTree = "<group>"; };
+		F1A52DA8206047C1006EC602 /* DroneVideoStreamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DroneVideoStreamViewController.h; sourceTree = "<group>"; };
+		F1A52DA9206047C1006EC602 /* DroneVideoStreamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DroneVideoStreamViewController.m; sourceTree = "<group>"; };
+		F1A52DAB20604D2E006EC602 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		F1A52DAC20604D2E006EC602 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		F1A52DAE206052E4006EC602 /* TouchForwardingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchForwardingView.h; sourceTree = "<group>"; };
+		F1A52DAF206052E4006EC602 /* TouchForwardingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchForwardingView.m; sourceTree = "<group>"; };
+		F1B2136C20BAF5EE0006F58F /* GeospatialAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeospatialAnalytics.h; sourceTree = "<group>"; };
+		F1B2136D20BAF5EE0006F58F /* GeospatialAnalytics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeospatialAnalytics.m; sourceTree = "<group>"; };
+		F1B88DDE20C9689300B4B913 /* ManualFlightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManualFlightViewController.h; sourceTree = "<group>"; };
+		F1B88DDF20C9689300B4B913 /* ManualFlightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManualFlightViewController.m; sourceTree = "<group>"; };
+		F1B88DE120C96ACE00B4B913 /* PointMissionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointMissionViewController.h; sourceTree = "<group>"; };
+		F1B88DE220C96ACE00B4B913 /* PointMissionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointMissionViewController.m; sourceTree = "<group>"; };
+		F1BAD7B320CC400E000AEE8D /* DroneImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DroneImage.h; sourceTree = "<group>"; };
+		F1BAD7B420CC400E000AEE8D /* DroneImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DroneImage.m; sourceTree = "<group>"; };
+		F1BAD7B620CC40AE000AEE8D /* DroneImageOverlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DroneImageOverlay.h; sourceTree = "<group>"; };
+		F1BAD7B720CC40AE000AEE8D /* DroneImageOverlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DroneImageOverlay.m; sourceTree = "<group>"; };
+		F1BD3C382084C0820084CA65 /* DJIAircraftAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJIAircraftAnnotationView.h; sourceTree = "<group>"; };
+		F1BD3C392084C0820084CA65 /* DJIAircraftAnnotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJIAircraftAnnotationView.m; sourceTree = "<group>"; };
+		F1BD3C3B2084C1490084CA65 /* DJIAircraftAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DJIAircraftAnnotation.h; path = Autobot/Controllers/DJIAircraftAnnotation.h; sourceTree = SOURCE_ROOT; };
+		F1BD3C3C2084C1490084CA65 /* DJIAircraftAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DJIAircraftAnnotation.m; path = Autobot/Controllers/DJIAircraftAnnotation.m; sourceTree = SOURCE_ROOT; };
+		F1C67C5B21FB561A008F1ADF /* DroneImageOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DroneImageOverlayView.h; path = Autobot/Controllers/DroneImageOverlayView.h; sourceTree = SOURCE_ROOT; };
+		F1C67C5C21FB561A008F1ADF /* DroneImageOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DroneImageOverlayView.m; path = Autobot/Controllers/DroneImageOverlayView.m; sourceTree = SOURCE_ROOT; };
+		F1F60AB12061476D00489F26 /* InspectionAreaManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InspectionAreaManager.h; sourceTree = "<group>"; };
+		F1F60AB22061476D00489F26 /* InspectionAreaManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InspectionAreaManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1A52D5A205FEBCC006EC602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F140BA1A2067E6370053058D /* VideoPreviewer.framework in Frameworks */,
+				57955861F0105B564E4D62FC /* libPods-Autobot.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A52D72205FEBCC006EC602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A52D7D205FEBCC006EC602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F39B1D1DCD5C829D692C8F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9985048999FE0CF548BA05A2 /* Pods-Autobot.debug.xcconfig */,
+				2978A69099C4B9BD8264E0EF /* Pods-Autobot.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F136919C206921E90036487C /* Networing */ = {
+			isa = PBXGroup;
+			children = (
+				F13691912069218A0036487C /* ByteSwap.hpp */,
+				F13691922069218A0036487C /* inputmemorystream.cpp */,
+				F13691952069218B0036487C /* inputmemorystream.hpp */,
+				F13691902069218A0036487C /* outputmemorystream.cpp */,
+				F13691942069218A0036487C /* outputmemorystream.hpp */,
+				F13691962069218B0036487C /* socketaddress.cpp */,
+				F13691932069218A0036487C /* socketaddress.hpp */,
+				F13691972069218B0036487C /* tcpsocket.cpp */,
+				F136918F206921890036487C /* tcpsocket.hpp */,
+			);
+			path = Networing;
+			sourceTree = "<group>";
+		};
+		F140BA152067E60B0053058D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F140BA192067E60B0053058D /* VideoPreviewer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1A52D54205FEBCC006EC602 = {
+			isa = PBXGroup;
+			children = (
+				F1A52D5F205FEBCC006EC602 /* Autobot */,
+				F1A52D78205FEBCC006EC602 /* AutobotTests */,
+				F1A52D83205FEBCC006EC602 /* AutobotUITests */,
+				F1A52D5E205FEBCC006EC602 /* Products */,
+				3F39B1D1DCD5C829D692C8F3 /* Pods */,
+				FF5CE8A3750A09545C7E589F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1A52D5E205FEBCC006EC602 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1A52D5D205FEBCC006EC602 /* Autobot.app */,
+				F1A52D75205FEBCC006EC602 /* AutobotTests.xctest */,
+				F1A52D80205FEBCC006EC602 /* AutobotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1A52D5F205FEBCC006EC602 /* Autobot */ = {
+			isa = PBXGroup;
+			children = (
+				F1A52D6E205FEBCC006EC602 /* Info.plist */,
+				F1A52D69205FEBCC006EC602 /* Assets.xcassets */,
+				F1A52DA120600BC7006EC602 /* Autobot files */,
+				F1A52DA020600BB3006EC602 /* Model */,
+				F1A52D9F20600B9E006EC602 /* Views */,
+				F1A52D9E20600B97006EC602 /* Controllers */,
+			);
+			path = Autobot;
+			sourceTree = "<group>";
+		};
+		F1A52D78205FEBCC006EC602 /* AutobotTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1A52D79205FEBCC006EC602 /* AutobotTests.m */,
+				F1A52D7B205FEBCC006EC602 /* Info.plist */,
+			);
+			path = AutobotTests;
+			sourceTree = "<group>";
+		};
+		F1A52D83205FEBCC006EC602 /* AutobotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1A52D84205FEBCC006EC602 /* AutobotUITests.m */,
+				F1A52D86205FEBCC006EC602 /* Info.plist */,
+			);
+			path = AutobotUITests;
+			sourceTree = "<group>";
+		};
+		F1A52D9E20600B97006EC602 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1B88DDE20C9689300B4B913 /* ManualFlightViewController.h */,
+				F1B88DDF20C9689300B4B913 /* ManualFlightViewController.m */,
+				F1A52DAB20604D2E006EC602 /* MapViewController.h */,
+				F1A52DAC20604D2E006EC602 /* MapViewController.m */,
+				F1B88DE120C96ACE00B4B913 /* PointMissionViewController.h */,
+				F1B88DE220C96ACE00B4B913 /* PointMissionViewController.m */,
+				F1A52DA8206047C1006EC602 /* DroneVideoStreamViewController.h */,
+				F1A52DA9206047C1006EC602 /* DroneVideoStreamViewController.m */,
+				F1A52D63205FEBCC006EC602 /* HomeScreenViewController.h */,
+				F1A52D64205FEBCC006EC602 /* HomeScreenViewController.m */,
+				F1A52D9B20600B58006EC602 /* ConfigureDroneViewController.h */,
+				F1A52D9C20600B58006EC602 /* ConfigureDroneViewController.m */,
+				F1A52D9820600AF5006EC602 /* AreaMarkerViewController.h */,
+				F1A52D9920600AF5006EC602 /* AreaMarkerViewController.m */,
+				F1A52D9520600ABE006EC602 /* AreaSearchViewController.h */,
+				F1A52D9620600ABE006EC602 /* AreaSearchViewController.m */,
+				F1A52D9220600A9C006EC602 /* MissionSelectionViewController.h */,
+				F1A52D9320600A9C006EC602 /* MissionSelectionViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F1A52D9F20600B9E006EC602 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1C67C5B21FB561A008F1ADF /* DroneImageOverlayView.h */,
+				F1C67C5C21FB561A008F1ADF /* DroneImageOverlayView.m */,
+				F1BAD7B620CC40AE000AEE8D /* DroneImageOverlay.h */,
+				F1BAD7B720CC40AE000AEE8D /* DroneImageOverlay.m */,
+				F1BAD7B320CC400E000AEE8D /* DroneImage.h */,
+				F1BAD7B420CC400E000AEE8D /* DroneImage.m */,
+				F1A52D6B205FEBCC006EC602 /* LaunchScreen.storyboard */,
+				F1A52D66205FEBCC006EC602 /* Main.storyboard */,
+				F1BD3C382084C0820084CA65 /* DJIAircraftAnnotationView.h */,
+				F1BD3C3B2084C1490084CA65 /* DJIAircraftAnnotation.h */,
+				F1BD3C3C2084C1490084CA65 /* DJIAircraftAnnotation.m */,
+				F1BD3C392084C0820084CA65 /* DJIAircraftAnnotationView.m */,
+				F1A52DAE206052E4006EC602 /* TouchForwardingView.h */,
+				F1A52DAF206052E4006EC602 /* TouchForwardingView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1A52DA020600BB3006EC602 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F136919C206921E90036487C /* Networing */,
+				F1F60AB12061476D00489F26 /* InspectionAreaManager.h */,
+				F1F60AB22061476D00489F26 /* InspectionAreaManager.m */,
+				F1A52DA22060473A006EC602 /* DroneManager.h */,
+				F1A52DA32060473A006EC602 /* DroneManager.mm */,
+				F1A52DA520604745006EC602 /* NetworkManager.h */,
+				F1A52DA620604745006EC602 /* NetworkManager.mm */,
+				F1B2136C20BAF5EE0006F58F /* GeospatialAnalytics.h */,
+				F1B2136D20BAF5EE0006F58F /* GeospatialAnalytics.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1A52DA120600BC7006EC602 /* Autobot files */ = {
+			isa = PBXGroup;
+			children = (
+				F1A52D60205FEBCC006EC602 /* AppDelegate.h */,
+				F1A52D61205FEBCC006EC602 /* AppDelegate.m */,
+				F1A52D6F205FEBCC006EC602 /* main.m */,
+			);
+			path = "Autobot files";
+			sourceTree = "<group>";
+		};
+		FF5CE8A3750A09545C7E589F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F15BE9122084908000821DE3 /* Foundation.framework */,
+				F15BE9102084907800821DE3 /* UIKit.framework */,
+				F15BE90E2084907100821DE3 /* QuartzCore.framework */,
+				F15BE90C2084906A00821DE3 /* CoreVideo.framework */,
+				F15BE90A2084906200821DE3 /* CoreMedia.framework */,
+				F15BE9082084905B00821DE3 /* CoreImage.framework */,
+				F15BE9062084905500821DE3 /* CoreGraphics.framework */,
+				F15BE9042084905000821DE3 /* AVFoundation.framework */,
+				F15BE9022084904900821DE3 /* Accelerate.framework */,
+				F15BE9002084903900821DE3 /* AssetsLibrary.framework */,
+				F15BE8FE20848F9700821DE3 /* libOpenCV.a */,
+				F140BA142067E60B0053058D /* VideoPreviewer.xcodeproj */,
+				27A73DDEDE37F7ADED70B73A /* libPods-Autobot.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1A52D5C205FEBCC006EC602 /* Autobot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A52D89205FEBCC006EC602 /* Build configuration list for PBXNativeTarget "Autobot" */;
+			buildPhases = (
+				0EF4CCDB1180EFE1E241A56D /* [CP] Check Pods Manifest.lock */,
+				F1A52D59205FEBCC006EC602 /* Sources */,
+				F1A52D5A205FEBCC006EC602 /* Frameworks */,
+				F1A52D5B205FEBCC006EC602 /* Resources */,
+				A74B83F019249C173D1047B3 /* [CP] Embed Pods Frameworks */,
+				7AA1133230D1B8A6218AC63A /* [CP] Copy Pods Resources */,
+				F140BA1E2067E6370053058D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F140BA1D2067E6370053058D /* PBXTargetDependency */,
+			);
+			name = Autobot;
+			productName = Autobot;
+			productReference = F1A52D5D205FEBCC006EC602 /* Autobot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1A52D74205FEBCC006EC602 /* AutobotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A52D8C205FEBCC006EC602 /* Build configuration list for PBXNativeTarget "AutobotTests" */;
+			buildPhases = (
+				F1A52D71205FEBCC006EC602 /* Sources */,
+				F1A52D72205FEBCC006EC602 /* Frameworks */,
+				F1A52D73205FEBCC006EC602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A52D77205FEBCC006EC602 /* PBXTargetDependency */,
+			);
+			name = AutobotTests;
+			productName = AutobotTests;
+			productReference = F1A52D75205FEBCC006EC602 /* AutobotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1A52D7F205FEBCC006EC602 /* AutobotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A52D8F205FEBCC006EC602 /* Build configuration list for PBXNativeTarget "AutobotUITests" */;
+			buildPhases = (
+				F1A52D7C205FEBCC006EC602 /* Sources */,
+				F1A52D7D205FEBCC006EC602 /* Frameworks */,
+				F1A52D7E205FEBCC006EC602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A52D82205FEBCC006EC602 /* PBXTargetDependency */,
+			);
+			name = AutobotUITests;
+			productName = AutobotUITests;
+			productReference = F1A52D80205FEBCC006EC602 /* AutobotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1A52D55205FEBCC006EC602 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Bjarte Sjursen";
+				TargetAttributes = {
+					F1A52D5C205FEBCC006EC602 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F1A52D74205FEBCC006EC602 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F1A52D5C205FEBCC006EC602;
+					};
+					F1A52D7F205FEBCC006EC602 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F1A52D5C205FEBCC006EC602;
+					};
+				};
+			};
+			buildConfigurationList = F1A52D58205FEBCC006EC602 /* Build configuration list for PBXProject "Autobot" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1A52D54205FEBCC006EC602;
+			productRefGroup = F1A52D5E205FEBCC006EC602 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F140BA152067E60B0053058D /* Products */;
+					ProjectRef = F140BA142067E60B0053058D /* VideoPreviewer.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F1A52D5C205FEBCC006EC602 /* Autobot */,
+				F1A52D74205FEBCC006EC602 /* AutobotTests */,
+				F1A52D7F205FEBCC006EC602 /* AutobotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F140BA192067E60B0053058D /* VideoPreviewer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VideoPreviewer.framework;
+			remoteRef = F140BA182067E60B0053058D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1A52D5B205FEBCC006EC602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A52D6D205FEBCC006EC602 /* LaunchScreen.storyboard in Resources */,
+				F1A52D6A205FEBCC006EC602 /* Assets.xcassets in Resources */,
+				F1A52D68205FEBCC006EC602 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A52D73205FEBCC006EC602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A52D7E205FEBCC006EC602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EF4CCDB1180EFE1E241A56D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Autobot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AA1133230D1B8A6218AC63A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Autobot/Pods-Autobot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A74B83F019249C173D1047B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Autobot/Pods-Autobot-frameworks.sh",
+				"${PODS_ROOT}/DJI-SDK-iOS/iOS_Mobile_SDK/DJISDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJISDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Autobot/Pods-Autobot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1A52D59205FEBCC006EC602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C67C6021FB5A9A008F1ADF /* AppDelegate.h in Sources */,
+				F1C67C6121FB5A9A008F1ADF /* ByteSwap.hpp in Sources */,
+				F1C67C6221FB5A9A008F1ADF /* inputmemorystream.hpp in Sources */,
+				F1C67C6321FB5A9A008F1ADF /* outputmemorystream.hpp in Sources */,
+				F1C67C6421FB5A9A008F1ADF /* tcpsocket.hpp in Sources */,
+				F1C67C6521FB5A9A008F1ADF /* InspectionAreaManager.h in Sources */,
+				F1C67C6621FB5A9A008F1ADF /* DroneManager.h in Sources */,
+				F1C67C6721FB5A9A008F1ADF /* NetworkManager.h in Sources */,
+				F1C67C6821FB5A9A008F1ADF /* GeospatialAnalytics.h in Sources */,
+				F1C67C6921FB5A9A008F1ADF /* DroneImageOverlayView.h in Sources */,
+				F1C67C6A21FB5A9A008F1ADF /* DroneImageOverlay.h in Sources */,
+				F1C67C6B21FB5A9A008F1ADF /* DroneImage.h in Sources */,
+				F1C67C6C21FB5A9A008F1ADF /* LaunchScreen.storyboard in Sources */,
+				F1C67C6D21FB5A9A008F1ADF /* Main.storyboard in Sources */,
+				F1C67C6E21FB5A9A008F1ADF /* DJIAircraftAnnotationView.h in Sources */,
+				F1C67C6F21FB5A9A008F1ADF /* DJIAircraftAnnotation.h in Sources */,
+				F1C67C7021FB5A9A008F1ADF /* TouchForwardingView.h in Sources */,
+				F1C67C7121FB5A9A008F1ADF /* ManualFlightViewController.h in Sources */,
+				F1C67C7221FB5A9A008F1ADF /* MapViewController.h in Sources */,
+				F1C67C7321FB5A9A008F1ADF /* PointMissionViewController.h in Sources */,
+				F1C67C7421FB5A9A008F1ADF /* DroneVideoStreamViewController.h in Sources */,
+				F1C67C7521FB5A9A008F1ADF /* HomeScreenViewController.h in Sources */,
+				F1C67C7621FB5A9A008F1ADF /* ConfigureDroneViewController.h in Sources */,
+				F1C67C7721FB5A9A008F1ADF /* AreaMarkerViewController.h in Sources */,
+				F1C67C7821FB5A9A008F1ADF /* AreaSearchViewController.h in Sources */,
+				F1C67C7921FB5A9A008F1ADF /* MissionSelectionViewController.h in Sources */,
+				F1C67C5F21FB5A54008F1ADF /* socketaddress.hpp in Sources */,
+				F136919B2069218B0036487C /* tcpsocket.cpp in Sources */,
+				F1B2136E20BAF5EE0006F58F /* GeospatialAnalytics.m in Sources */,
+				F1A52D9D20600B58006EC602 /* ConfigureDroneViewController.m in Sources */,
+				F1C67C5D21FB561A008F1ADF /* DroneImageOverlayView.m in Sources */,
+				F136919A2069218B0036487C /* socketaddress.cpp in Sources */,
+				F1BD3C3A2084C0820084CA65 /* DJIAircraftAnnotationView.m in Sources */,
+				F1A52D9420600A9C006EC602 /* MissionSelectionViewController.m in Sources */,
+				F1A52D65205FEBCC006EC602 /* HomeScreenViewController.m in Sources */,
+				F1A52D9720600ABE006EC602 /* AreaSearchViewController.m in Sources */,
+				F1A52DA42060473A006EC602 /* DroneManager.mm in Sources */,
+				F1BD3C3D2084C1490084CA65 /* DJIAircraftAnnotation.m in Sources */,
+				F1A52D9A20600AF5006EC602 /* AreaMarkerViewController.m in Sources */,
+				F13691992069218B0036487C /* inputmemorystream.cpp in Sources */,
+				F1A52DAA206047C1006EC602 /* DroneVideoStreamViewController.m in Sources */,
+				F1F60AB32061476D00489F26 /* InspectionAreaManager.m in Sources */,
+				F1B88DE320C96ACE00B4B913 /* PointMissionViewController.m in Sources */,
+				F1A52D70205FEBCC006EC602 /* main.m in Sources */,
+				F1A52DA720604745006EC602 /* NetworkManager.mm in Sources */,
+				F1A52DB0206052E4006EC602 /* TouchForwardingView.m in Sources */,
+				F1A52D62205FEBCC006EC602 /* AppDelegate.m in Sources */,
+				F1BAD7B820CC40AE000AEE8D /* DroneImageOverlay.m in Sources */,
+				F1BAD7B520CC400E000AEE8D /* DroneImage.m in Sources */,
+				F1B88DE020C9689300B4B913 /* ManualFlightViewController.m in Sources */,
+				F1A52DAD20604D2E006EC602 /* MapViewController.m in Sources */,
+				F13691982069218B0036487C /* outputmemorystream.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A52D71205FEBCC006EC602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A52D7A205FEBCC006EC602 /* AutobotTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A52D7C205FEBCC006EC602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A52D85205FEBCC006EC602 /* AutobotUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F140BA1D2067E6370053058D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VideoPreviewer;
+			targetProxy = F140BA1C2067E6370053058D /* PBXContainerItemProxy */;
+		};
+		F1A52D77205FEBCC006EC602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A52D5C205FEBCC006EC602 /* Autobot */;
+			targetProxy = F1A52D76205FEBCC006EC602 /* PBXContainerItemProxy */;
+		};
+		F1A52D82205FEBCC006EC602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A52D5C205FEBCC006EC602 /* Autobot */;
+			targetProxy = F1A52D81205FEBCC006EC602 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1A52D66205FEBCC006EC602 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1A52D67205FEBCC006EC602 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1A52D6B205FEBCC006EC602 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1A52D6C205FEBCC006EC602 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1A52D87205FEBCC006EC602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F1A52D88205FEBCC006EC602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1A52D8A205FEBCC006EC602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9985048999FE0CF548BA05A2 /* Pods-Autobot.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MQNRSRR58;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/DJI-SDK-iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV\"",
+				);
+				INFOPLIST_FILE = Autobot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bjarte.ntnu.h2017.Autobot;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier) ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1A52D8B205FEBCC006EC602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2978A69099C4B9BD8264E0EF /* Pods-Autobot.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MQNRSRR58;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/DJI-SDK-iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV\"",
+				);
+				INFOPLIST_FILE = Autobot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bjarte.ntnu.h2017.Autobot;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier) ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1A52D8D205FEBCC006EC602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MQNRSRR58;
+				INFOPLIST_FILE = AutobotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bjarte.ntnu.h2017.AutobotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Autobot.app/Autobot";
+			};
+			name = Debug;
+		};
+		F1A52D8E205FEBCC006EC602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MQNRSRR58;
+				INFOPLIST_FILE = AutobotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bjarte.ntnu.h2017.AutobotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Autobot.app/Autobot";
+			};
+			name = Release;
+		};
+		F1A52D90205FEBCC006EC602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MQNRSRR58;
+				INFOPLIST_FILE = AutobotUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bjarte.ntnu.h2017.AutobotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Autobot;
+			};
+			name = Debug;
+		};
+		F1A52D91205FEBCC006EC602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MQNRSRR58;
+				INFOPLIST_FILE = AutobotUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bjarte.ntnu.h2017.AutobotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Autobot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1A52D58205FEBCC006EC602 /* Build configuration list for PBXProject "Autobot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A52D87205FEBCC006EC602 /* Debug */,
+				F1A52D88205FEBCC006EC602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A52D89205FEBCC006EC602 /* Build configuration list for PBXNativeTarget "Autobot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A52D8A205FEBCC006EC602 /* Debug */,
+				F1A52D8B205FEBCC006EC602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A52D8C205FEBCC006EC602 /* Build configuration list for PBXNativeTarget "AutobotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A52D8D205FEBCC006EC602 /* Debug */,
+				F1A52D8E205FEBCC006EC602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A52D8F205FEBCC006EC602 /* Build configuration list for PBXNativeTarget "AutobotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A52D90205FEBCC006EC602 /* Debug */,
+				F1A52D91205FEBCC006EC602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1A52D55205FEBCC006EC602 /* Project object */;
+}

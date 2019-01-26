@@ -1,0 +1,7 @@
+# platform :ios, '10.0'
+target 'Autobot' do
+  pod 'DJI-SDK-iOS'
+  pod 'OpenCV'
+  pod 'FFmpeg'
+  pod 'DTMHeatmap'
+end
